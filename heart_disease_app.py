@@ -4,6 +4,7 @@ import numpy as np
 import pickle
 import sklearn
 
+
 DATASET_PATH = "../testing/Resources/data_cleaned.csv"
 LOG_MODEL_PATH = "lr_model.pkl"
 
