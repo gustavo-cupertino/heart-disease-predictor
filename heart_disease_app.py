@@ -16,7 +16,7 @@ def main():
     @st.cache_data(persist=True)
     def load_dataset() -> pd.DataFrame:
         heart_df = pd.read_csv(DATASET_PATH)
-        heart_df = heart_df.to_pandas()
+        # heart_df = heart_df.to_pandas()
         heart_df = pd.DataFrame(np.sort(heart_df.values, axis=0),
                                 index=heart_df.index,
                                 columns=heart_df.columns)
