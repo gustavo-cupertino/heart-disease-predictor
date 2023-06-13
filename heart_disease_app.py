@@ -2,14 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-# import sklearn
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
-from imblearn.over_sampling import RandomOverSampler
-from sklearn.utils import resample
-from sklearn.linear_model import LogisticRegression
+import sklearn
 
 
 DATASET_PATH = "../testing/Resources/data_cleaned.csv"
