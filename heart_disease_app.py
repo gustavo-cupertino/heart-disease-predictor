@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import polars as pl
+# import polars as pl
 import numpy as np
 import pickle
 import sklearn
@@ -15,7 +15,7 @@ def calculate_bmi(weight, height):
 def main():
     @st.cache_data(persist=True)
     def load_dataset() -> pd.DataFrame:
-        heart_df = pl.read_csv(DATASET_PATH)
+        heart_df = pd.read_csv(DATASET_PATH)
         heart_df = heart_df.to_pandas()
         heart_df = pd.DataFrame(np.sort(heart_df.values, axis=0),
                                 index=heart_df.index,
